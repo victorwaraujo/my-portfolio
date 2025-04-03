@@ -7,7 +7,7 @@ const Hero = () => {
     return (
       <>
         <div className="bg-slate-900 min-h-screen flex items-center pt-2 md:pt-20 pb-20">
-            <div className="container max-w-7xl mx-auto flex flex-col justify-center text-white md:flex-row items-center md:justify-start md:px-8  gap-10">
+            <div className="container max-w-7xl mx-auto flex flex-col justify-center text-white md:flex-row items-center md:justify-between md:px-8 md:gap-10 gap-10">
                 <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
                     <div className="relative w-36 md:w-48 h-auto">
                         <div className="absolute top-4 left-4 w-36 md:w-48 h-full border-4 border-orange-500 rounded-sm"></div>
@@ -16,7 +16,7 @@ const Hero = () => {
                             alt="Avatar" 
                             className="relative z-10 w-48 h-auto" />
                     </div>
-                    <div className="flex flex-col items-center justify-center gap-2 md:gap-6">
+                    <div className="flex flex-col items-center gap-2 md:gap-6">
                         <h1 className="text-3xl md:text-6xl font-bold">Victor Araujo</h1>
                         <p className="text-2xl md:text-4xl text-slate-200 mt-1 md:mt-2">Desenvolvedor Software Full Stack</p>
                         <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 mt-4">
