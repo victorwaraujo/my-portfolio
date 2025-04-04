@@ -1,6 +1,6 @@
 
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiTailwindcss } from "react-icons/si"
+import { FaGithub, FaExternalLinkAlt, FaNodeJs } from "react-icons/fa"
+import { SiHtml5, SiCss3, SiReact, SiTailwindcss, SiTypescript, SiPostgresql } from "react-icons/si"
 import EzTravel from "../../../../assets/images/eztravel.png"
 
 const projects = [
@@ -9,7 +9,15 @@ const projects = [
     date: "Jul 2024 - Ago 2024",
     image: EzTravel,
     description: "Projeto ez.travel é um planejador de viagens que permite você organizar suas atividades, convidados e links.",
-    technologies: [SiJavascript, SiHtml5, SiCss3, SiReact, SiTailwindcss],
+    technologies: [
+      {icon:SiTypescript, color:"text-blue-500"},
+      {icon:SiHtml5, color: "text-orange-600" },
+      {icon:SiCss3, color: "text-blue-400" },
+      {icon:SiReact, color: "text-cyan-500"},
+      {icon:SiTailwindcss, color: "text-teal-400"},
+      {icon:FaNodeJs, color: "text-green-500"},
+      {icon:SiPostgresql, color: "text-blue-600"},
+    ],
     github: "https://github.com/victorwaraujo/projeto-ez-travel",
     live: "https://projeto-ez-travel-frontend.onrender.com/",
   },
@@ -18,7 +26,13 @@ const projects = [
     date: "Jan 2024 - Mar 2024",
     image: "/images/project2.png",
     description: "Descrição breve do projeto 2. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-    technologies: [SiJavascript, SiHtml5, SiCss3, SiReact, SiTailwindcss],
+    technologies: [
+      { icon: SiTypescript, color: "text-blue-500" },
+      { icon: SiHtml5, color: "text-orange-600" },
+      { icon: SiCss3, color: "text-blue-400" },
+      { icon: SiReact, color: "text-cyan-500" },
+      { icon: SiTailwindcss, color: "text-teal-400" }
+    ],
     github: "https://github.com/seu-usuario/projeto2",
     live: "https://projeto2.com",
   },
@@ -27,7 +41,13 @@ const projects = [
     date: "Abr 2024 - Jun 2024",
     image: "/images/project3.png",
     description: "Descrição breve do projeto 3. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-    technologies: [SiJavascript, SiHtml5, SiCss3, SiReact, SiTailwindcss],
+    technologies:[
+      { icon: SiTypescript, color: "text-blue-500" },
+      { icon: SiHtml5, color: "text-orange-600" },
+      { icon: SiCss3, color: "text-blue-400" },
+      { icon: SiReact, color: "text-cyan-500" },
+      { icon: SiTailwindcss, color: "text-teal-400" }
+    ],
     github: "https://github.com/seu-usuario/projeto3",
     live: "https://projeto3.com",
   },
@@ -36,7 +56,13 @@ const projects = [
     date: "Jul 2024 - Presente",
     image: "/images/project4.png",
     description: "Descrição breve do projeto 4. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-    technologies: [SiJavascript, SiHtml5, SiCss3, SiReact, SiTailwindcss],
+    technologies:[
+      { icon: SiTypescript, color: "text-blue-500" },
+      { icon: SiHtml5, color: "text-orange-600" },
+      { icon: SiCss3, color: "text-blue-400" },
+      { icon: SiReact, color: "text-cyan-500" },
+      { icon: SiTailwindcss, color: "text-teal-400" }
+    ],
     github: "https://github.com/seu-usuario/projeto4",
     live: "https://projeto4.com",
   }
@@ -44,14 +70,15 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-slate-900 py-16 px-5 flex flex-col items-center relative">
+    <div id="projetos" className="bg-slate-900 py-16 px-5 flex flex-col items-center relative">
 
-      <h1 className="absolute text-8xl md:text-10xl text-slate-800 font-bold opacity-20 top-0">
+      <h1 className="absolute text-8xl md:text-10xl text-slate-800 font-bold opacity-20 top-6 md:top-0">
         Projetos
       </h1>
 
   
-      <h2 className="text-4xl md:text-6xl text-orange-500 font-bold relative">
+      <h2 className="text-4xl md:text-6xl text-orange-500 font-bold relative bg-gradient-to-r from-orange-400 via-red-500 to-orange-400 
+             bg-clip-text text-transparent animate-gradient">
         Meus Projetos
       </h2>
 
@@ -70,8 +97,8 @@ const Projects = () => {
 
            
             <div className="flex gap-3 mt-3">
-              {project.technologies.map((Icon, i) => (
-                <Icon key={i} className="w-6 h-6 text-blue-500" />
+              {project.technologies.map((tech, i) => (
+                <tech.icon key={i} className= {`w-6 h-6 ${tech.color}`} />
               ))}
             </div>
 
