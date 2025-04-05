@@ -8,13 +8,13 @@ const Hero = () => {
       <>
         <div id="inicio"className="bg-slate-900 min-h-screen flex items-center pt-2 md:pt-10 pb-10 ">
             <div className="container max-w-7xl mx-auto flex flex-col justify-center text-white md:flex-row md:justify-around items-center gap-10">
-                <div className="flex flex-col md:flex-row items-center gap-10 md:gap-80">
+                <div className="flex flex-col md:flex-row items-center gap-10 md:gap-80 mt-20">
                     <div className="relative w-36 md:w-48 h-auto">
-                        <div className="absolute top-4 left-4 w-36 md:w-48 h-full border-4 border-orange-500 rounded-md shadow-[0px_0px_20px_rgba(255,119,0,0.6)]"></div>
+                        <div className="absolute top-4 left-4 w-36 md:w-48 h-full border-4 border-orange-500 rounded-md shadow-[0px_0px_20px_rgba(255,119,0,0.6)] animate-pulse"></div>
                         <img 
                             src={Avatar} 
                             alt="Avatar" 
-                            className="relative z-10 w-48 h-auto border border-slate-400" />
+                            className="relative z-10 w-48 h-auto border border-slate-400 rounded-md" />
                     </div>
                     <div className="flex flex-col items-center gap-2 md:gap-6">
                         <h1 className="text-3xl md:text-6xl font-bold">Victor Araujo</h1>
@@ -31,7 +31,7 @@ const Hero = () => {
                             <SiPostgresql className="w-10 h-10 md:w-12 md:h-12 text-blue-600 transition-transform duration-300 hover:scale-110" />
                         </div>
                         <div className="w-full flex justify-center md:justify-end">
-                            <button className="bg-orange-500 text-white font-bold py-1 px-2 tracking-wide border-2 border-orange-700 hover:bg-orange-600 transition-all duration-300 hover:scale-105 shadow-md">Contate-me.</button>
+                            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold py-1 px-2 tracking-wide border-2 border-orange-700 hover:from-orange-600 hover:to-orange-700 transition-all duration-300 hover:scale-105 shadow-md rounded">Contate-me.</button>
                         </div>
                     </div>
                  </div>    
