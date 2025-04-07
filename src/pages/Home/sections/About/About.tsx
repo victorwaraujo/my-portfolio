@@ -59,7 +59,7 @@ const About = () => {
         TypeScript, especializado no desenvolvimento de APIs REST e aplicações
         web modernas. Com formação em Engenharia Mecânica, desenvolvi projetos
         completos envolvendo autenticação, banco de dados e interfaces
-        dinâmicas. Também atuei como instrutor de CAD/CAM na Universidade do Estado do Amazonas.Sou proativo,
+        dinâmicas. Também atuei como instrutor de CAD/CAM na Universidade do Estado do Amazonas. Sou proativo,
         organizado e sempre em busca de aprendizado e inovação na tecnologia.
         <br />
         <br />
