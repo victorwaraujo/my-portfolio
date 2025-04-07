@@ -102,7 +102,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-slate-800 p-6 rounded-lg shadow-lg text-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer snap-start min-w-[90%] sm:min-w-[80%] md:min-w-0"
+            className="bg-slate-800 p-6 rounded-lg shadow-lg text-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer snap-start min-w-[90%] sm:min-w-[80%] md:min-w-0 flex flex-col justify-between"
           >
             <img
               src={project.image}
@@ -114,29 +114,31 @@ const Projects = () => {
             <p className="text-gray-400 text-sm">{project.date}</p>
             <p className="text-gray-300 mt-2">{project.description}</p>
 
-            <div className="flex gap-3 mt-3">
-              {project.technologies.map((tech, i) => (
-                <tech.icon key={i} className={`w-6 h-6 ${tech.color}`} />
-              ))}
-            </div>
+            <div className="mt-4">
+              <div className="flex gap-3">
+                {project.technologies.map((tech, i) => (
+                  <tech.icon key={i} className={`w-6 h-6 ${tech.color}`} />
+                ))}
+              </div>
 
-            <div className="flex gap-4 mt-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white"
-              >
-                <FaGithub className="w-6 h-6" />
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white"
-              >
-                <FaExternalLinkAlt className="w-6 h-6" />
-              </a>
+              <div className="flex gap-4 mt-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <FaGithub className="w-6 h-6" />
+                </a>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <FaExternalLinkAlt className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
         ))}
