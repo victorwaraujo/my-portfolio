@@ -8,6 +8,7 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import EzTravel from "../../../../assets/images/ez.travel.png";
+import RecognitionNotes from "../../../../assets/images/recognitionNotes.png";
 
 const projects = [
   {
@@ -29,11 +30,11 @@ const projects = [
     live: "https://projeto-ez-travel-frontend.onrender.com/",
   },
   {
-    title: "Projeto 2",
+    title: "Speech Notes",
     date: "Jan 2024 - Mar 2024",
-    image: "/images/project2.png",
+    image: RecognitionNotes,
     description:
-      "Descrição breve do projeto 2. Explicação sobre as funcionalidades e tecnologias utilizadas.",
+      "Desenvolvi este projeto para facilitar meu próprio fluxo de trabalho: enquanto estou codando, uso o Speech Notes para registrar ideias e anotações rapidamente por voz, sem perder o foco. A aplicação utiliza uma API externa de reconhecimento de áudio, convertendo minha fala em texto de forma prática e eficiente. No backend, utilizei Node.js com TypeScript, e no frontend optei por algo simples, apenas para visualização, usando React, Vite e Tailwind CSS para uma interface leve e responsiva.",
     technologies: [
       { icon: SiTypescript, color: "text-blue-500" },
       { icon: SiHtml5, color: "text-orange-600" },
@@ -41,8 +42,8 @@ const projects = [
       { icon: SiReact, color: "text-cyan-500" },
       { icon: SiTailwindcss, color: "text-teal-400" },
     ],
-    github: "https://github.com/seu-usuario/projeto2",
-    live: "https://projeto2.com",
+    github: "https://github.com/victorwaraujo/Projeto-NLW-Node.js",
+    live: "https://speech-recognition-notes.onrender.com/",
   },
   // {
   //   title: "Projeto 3",
@@ -95,11 +96,11 @@ const Projects = () => {
         Meus Projetos
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 max-w-6xl">
+      <div className="flex md:grid md:grid-cols-2 gap-6 md:gap-10 overflow-x-auto md:overflow-visible snap-x snap-mandatory px-2 mt-16 w-full max-w-7xl scrollbar-hide">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-slate-800 p-6 rounded-lg shadow-lg text-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+            className="bg-slate-800 p-6 rounded-lg shadow-lg text-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer snap-start min-w-[90%] sm:min-w-[80%] md:min-w-0"
           >
             <img
               src={project.image}
