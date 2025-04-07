@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "Speech Notes",
-    date: "Jan 2024 - Mar 2024",
+    date: "Fev 2024 - Fev 2024",
     image: RecognitionNotes,
     description:
       "Desenvolvi este projeto para facilitar meu próprio fluxo de trabalho: enquanto estou codando, uso o Speech Notes para registrar ideias e anotações rapidamente por voz, sem perder o foco. A aplicação utiliza uma API externa de reconhecimento de áudio, convertendo minha fala em texto de forma prática e eficiente. No backend, utilizei Node.js com TypeScript, e no frontend optei por algo simples, apenas para visualização, usando React, Vite e Tailwind CSS para uma interface leve e responsiva.",
