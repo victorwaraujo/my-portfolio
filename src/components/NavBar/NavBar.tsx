@@ -14,9 +14,14 @@ const NavBar = () => {
     }
   
     return (
-      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-slate-900/80 backdrop-blur-sm text-white shadow-md">
-        <div className="container max-w-7xl mx-auto flex items-center justify-between h-20 px-4  md:px-8">
-            <img src={Logo} alt="Victor Araujo Logo" className="h-40 cursor-pointer" onClick={() => scrollToSection('inicio')} />
+      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-slate-950/80 backdrop-blur-sm text-white shadow-md">
+        <div className="container max-w-7xl mx-auto flex items-center justify-between h-20 px-4  md:px-16">
+            <img 
+                src={Logo} 
+                alt="Victor Araujo Logo" 
+                className="h-12 w-auto object-contain cursor-pointer" 
+                onClick={() => scrollToSection('inicio')} 
+            />
             <ul className="hidden md:flex space-x-6 text-lg">
                 <li className={`cursor-pointer border-b-2 border-transparent hover:border-orange-400`} onClick={() => scrollToSection("inicio")} >Início</li>
                 <li className={`cursor-pointer border-b-2 border-transparent hover:border-orange-400`} onClick={() => scrollToSection("sobre")} >Sobre</li>

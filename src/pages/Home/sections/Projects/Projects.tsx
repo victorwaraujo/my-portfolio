@@ -44,38 +44,38 @@ const projects = [
     github: "https://github.com/seu-usuario/projeto2",
     live: "https://projeto2.com",
   },
-  {
-    title: "Projeto 3",
-    date: "Abr 2024 - Jun 2024",
-    image: "/images/project3.png",
-    description:
-      "Descrição breve do projeto 3. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-    technologies: [
-      { icon: SiTypescript, color: "text-blue-500" },
-      { icon: SiHtml5, color: "text-orange-600" },
-      { icon: SiCss3, color: "text-blue-400" },
-      { icon: SiReact, color: "text-cyan-500" },
-      { icon: SiTailwindcss, color: "text-teal-400" },
-    ],
-    github: "https://github.com/seu-usuario/projeto3",
-    live: "https://projeto3.com",
-  },
-  {
-    title: "Projeto 4",
-    date: "Jul 2024 - Presente",
-    image: "/images/project4.png",
-    description:
-      "Descrição breve do projeto 4. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-    technologies: [
-      { icon: SiTypescript, color: "text-blue-500" },
-      { icon: SiHtml5, color: "text-orange-600" },
-      { icon: SiCss3, color: "text-blue-400" },
-      { icon: SiReact, color: "text-cyan-500" },
-      { icon: SiTailwindcss, color: "text-teal-400" },
-    ],
-    github: "https://github.com/seu-usuario/projeto4",
-    live: "https://projeto4.com",
-  },
+  // {
+  //   title: "Projeto 3",
+  //   date: "Abr 2024 - Jun 2024",
+  //   image: "/images/project3.png",
+  //   description:
+  //     "Descrição breve do projeto 3. Explicação sobre as funcionalidades e tecnologias utilizadas.",
+  //   technologies: [
+  //     { icon: SiTypescript, color: "text-blue-500" },
+  //     { icon: SiHtml5, color: "text-orange-600" },
+  //     { icon: SiCss3, color: "text-blue-400" },
+  //     { icon: SiReact, color: "text-cyan-500" },
+  //     { icon: SiTailwindcss, color: "text-teal-400" },
+  //   ],
+  //   github: "https://github.com/seu-usuario/projeto3",
+  //   live: "https://projeto3.com",
+  // },
+  // {
+  //   title: "Projeto 4",
+  //   date: "Jul 2024 - Presente",
+  //   image: "/images/project4.png",
+  //   description:
+  //     "Descrição breve do projeto 4. Explicação sobre as funcionalidades e tecnologias utilizadas.",
+  //   technologies: [
+  //     { icon: SiTypescript, color: "text-blue-500" },
+  //     { icon: SiHtml5, color: "text-orange-600" },
+  //     { icon: SiCss3, color: "text-blue-400" },
+  //     { icon: SiReact, color: "text-cyan-500" },
+  //     { icon: SiTailwindcss, color: "text-teal-400" },
+  //   ],
+  //   github: "https://github.com/seu-usuario/projeto4",
+  //   live: "https://projeto4.com",
+  // },
 ];
 
 const Projects = () => {
