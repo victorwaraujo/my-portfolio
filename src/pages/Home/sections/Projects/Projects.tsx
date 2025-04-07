@@ -41,6 +41,8 @@ const projects = [
       { icon: SiCss3, color: "text-blue-400" },
       { icon: SiReact, color: "text-cyan-500" },
       { icon: SiTailwindcss, color: "text-teal-400" },
+      { icon: FaNodeJs, color: "text-green-500" },
+      { icon: SiPostgresql, color: "text-blue-600" },
     ],
     github: "https://github.com/victorwaraujo/Projeto-NLW-Node.js",
     live: "https://speech-recognition-notes.onrender.com/",
