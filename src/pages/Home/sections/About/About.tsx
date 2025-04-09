@@ -1,6 +1,7 @@
-import { HiAcademicCap, HiBriefcase } from "react-icons/hi";
+import { HiAcademicCap, HiBriefcase } from "react-icons/hi"
 import {
   SiCss3,
+  SiDocker,
   SiGit,
   SiHtml5,
   SiNextdotjs,
@@ -9,8 +10,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiVite,
-} from "react-icons/si";
+} from "react-icons/si"
 
 const skills = [
   { name: "Git", icon: SiGit, color: "text-orange-500" },
@@ -19,11 +19,12 @@ const skills = [
   { name: "TypeScript", icon: SiTypescript, color: "text-blue-400" },
   { name: "Tailwind", icon: SiTailwindcss, color: "text-teal-400" },
   { name: "React", icon: SiReact, color: "text-cyan-500" },
-  { name: "Vite", icon: SiVite, color: "text-purple-400" },
+  { name: "Docker", icon: SiDocker, color: "text-blue-500" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-gray-300" },
   { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-600" },
-];
+  
+]
 
 const About = () => {
   return (
@@ -50,7 +51,9 @@ const About = () => {
         <div className="bg-slate-800 p-6  rounded-lg shadow-lg flex flex-col items-center text-center text-white flex-1 min-h-[150px]">
           <HiAcademicCap className="w-12 h-12 text-orange-600" />
           <h3 className="text-xl font-bold mt-3">Educação</h3>
-          <p className="text-gray-400">Bacharelado em Engenharia Mecânica - UEA</p>
+          <p className="text-gray-400">
+            Bacharelado em Engenharia Mecânica - UEA
+          </p>
         </div>
       </div>
 
@@ -59,13 +62,12 @@ const About = () => {
         TypeScript, especializado no desenvolvimento de APIs REST e aplicações
         web modernas. Com formação em Engenharia Mecânica, desenvolvi projetos
         completos envolvendo autenticação, banco de dados e interfaces
-        dinâmicas. Também atuei como instrutor de CAD/CAM na Universidade do Estado do Amazonas. Sou proativo,
-        organizado e sempre em busca de aprendizado e inovação na tecnologia.
-        <br />
-        <br />
-        Me destaco por minha proatividade, organização e facilidade em trabalhar
-        em equipe. Estou sempre buscando aprender e contribuir com soluções
-        inovadoras no universo da tecnologia.
+        dinâmicas. Também atuei como instrutor de CAD/CAM na Universidade do
+        Estado do Amazonas. Sou organizado, comunicativo e estou sempre em busca
+        de aprendizado e inovação na área de tecnologia. <br /> <br /> Tenho facilidade em
+        trabalhar em equipe e estou constantemente buscando evoluir e contribuir
+        com soluções criativas e eficientes para os desafios do desenvolvimento
+        de software.
       </p>
 
       <h3 className="text-3xl text-white font-bold mt-10">Habilidades</h3>
@@ -81,7 +83,7 @@ const About = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -110,9 +110,11 @@ const Projects = () => {
               className="rounded-lg mb-4"
             />
 
-            <h3 className="text-xl font-bold">{project.title}</h3>
-            <p className="text-gray-400 text-sm">{project.date}</p>
-            <p className="text-gray-300 mt-2">{project.description}</p>
+            <div className="mt-2">
+              <h3 className="text-xl font-bold">{project.title}</h3>
+              <p className="text-gray-400 text-sm -mt-0">{project.date}</p>
+            </div>
+            <p className="text-gray-300 mt-1">{project.description}</p>
 
             <div className="mt-4">
               <div className="flex gap-3">
