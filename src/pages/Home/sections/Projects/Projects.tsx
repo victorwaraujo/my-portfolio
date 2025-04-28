@@ -6,11 +6,34 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiPostgresql,
+  SiFastify,
+  SiPrisma,
+  SiNextdotjs,
 } from "react-icons/si";
 import EzTravel from "../../../../assets/images/ez.travel.png";
 import RecognitionNotes from "../../../../assets/images/recognitionNotes.png";
+import EscutaEssaHistoria from "../../../../assets/images/adminPageHome_EEH.png";
 
 const projects = [
+  {
+    title: "Escuta Essa História",
+    date: "Abr 2025 - Abr 2025",
+    image: EscutaEssaHistoria,
+    description:
+      "Projeto de podcast de história da UFAM - Universidade Federal do Amazonas, focado em divulgar trabalhos de iniciação científica. Plataforma desenvolvida com Next.js (App Router), React, TypeScript, Prisma e PostgreSQL no Railway, com imagens no Cloudinary. Área pública com episódios e mensagens, painel admin protegido por JWT para cadastro, edição e exclusão de episódios. API validada com Zod e interface responsiva com TailwindCSS.",
+    technologies: [
+      { icon: SiTypescript, color: "text-blue-500" },
+      { icon: SiReact, color: "text-cyan-500" },
+      { icon: SiNextdotjs, color: "text-white" },
+      { icon: SiTailwindcss, color: "text-teal-400" },
+      { icon: FaNodeJs, color: "text-green-500" },
+      { icon: SiPostgresql, color: "text-blue-600" },
+      { icon: SiFastify, color: "text-white" },
+      { icon: SiPrisma, color: "text-green-500" },
+    ],
+    github: "https://github.com/victorwaraujo/escuta-essa-historia",
+    live: "https://escuta-essa-historia-production.up.railway.app/",
+  },
   {
     title: "Ez Travel",
     date: "Jul 2024 - Ago 2024",
@@ -47,22 +70,8 @@ const projects = [
     github: "https://github.com/victorwaraujo/Projeto-NLW-Node.js",
     live: "https://speech-recognition-notes.onrender.com/",
   },
-  // {
-  //   title: "Projeto 3",
-  //   date: "Abr 2024 - Jun 2024",
-  //   image: "/images/project3.png",
-  //   description:
-  //     "Descrição breve do projeto 3. Explicação sobre as funcionalidades e tecnologias utilizadas.",
-  //   technologies: [
-  //     { icon: SiTypescript, color: "text-blue-500" },
-  //     { icon: SiHtml5, color: "text-orange-600" },
-  //     { icon: SiCss3, color: "text-blue-400" },
-  //     { icon: SiReact, color: "text-cyan-500" },
-  //     { icon: SiTailwindcss, color: "text-teal-400" },
-  //   ],
-  //   github: "https://github.com/seu-usuario/projeto3",
-  //   live: "https://projeto3.com",
-  // },
+  
+
   // {
   //   title: "Projeto 4",
   //   date: "Jul 2024 - Presente",
